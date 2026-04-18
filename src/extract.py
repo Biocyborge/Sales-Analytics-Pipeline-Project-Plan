@@ -30,7 +30,7 @@ def extracter():
         "sellers" : data_loader("olist_sellers_dataset.csv"),
         "category" : data_loader("product_category_name_translation.csv")
     }
-    print(customer_data["category"])
+    print(customer_data["category"].columns.tolist())
     return customer_data
 
 if __name__ == "__main__":
